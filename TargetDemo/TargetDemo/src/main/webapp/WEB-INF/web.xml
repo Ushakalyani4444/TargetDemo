@@ -1,0 +1,46 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>AddProductServlet</servlet-name>
+        <servlet-class>com.example.controller.AddProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddProductServlet</servlet-name>
+        <url-pattern>/addProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListProductServlet</servlet-name>
+        <servlet-class>com.example.controller.ListProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListProductServlet</servlet-name>
+        <url-pattern>/listProducts</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <servlet-class>com.example.controller.UpdateProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateProductServlet</servlet-name>
+        <url-pattern>/updateProduct</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <servlet-class>com.example.controller.DeleteProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteProductServlet</servlet-name>
+        <url-pattern>/deleteProduct</url-pattern>
+    </servlet-mapping>
+</web-app>
